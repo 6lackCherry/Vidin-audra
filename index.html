@@ -76,7 +76,7 @@ function makeResponsive() {
         var iw = window.innerWidth, ih = window.innerHeight;
         var pRatio = window.devicePixelRatio || 1;
         var xRatio = iw / w, yRatio = ih / h;
-        var sRatio = Math.min(xRatio, yRatio); // kad neiškristų niekas
+        var sRatio = Math.min(xRatio, yRatio) * 0.9; // kad neiškristų niekas
 
         canvas.width = w * pRatio * sRatio;
         canvas.height = h * pRatio * sRatio;
